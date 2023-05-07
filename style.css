@@ -1,0 +1,79 @@
+body {
+    font-family: 'IBM Plex Mono', monospace;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 800px;
+    background: white;
+    color: black;
+}
+
+html, body, #__next, main, textarea {
+    height: 100%;
+}
+
+main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main h1 {
+    font-weight: normal;
+}
+
+main h1, main p, main button {
+    margin: 10px 0;
+}
+
+main h1 {
+    margin-bottom: 0;
+}
+
+main button {
+    cursor: pointer;
+    border: none;
+    background: black;
+    color: white;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 10px 20px;
+}
+
+textarea, .text-container {
+    box-sizing: border-box;
+    padding: 20px 10px;
+}
+
+textarea {
+    border: none;
+    outline: none;
+    background: inherit;
+    line-height: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    resize: none;
+    width: 100%;
+}
+
+.text-container {
+    white-space: pre-wrap;
+}
+
+.text-container.is-empty, ::placeholder {
+    color: #858585;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #111111;
+        color: white;
+    }
+
+    main button {
+        background: white;
+        color: black;
+    }
+}
